@@ -26,6 +26,9 @@
 
     "paths": {
       "@api": ["./src/api/index.ts"],
+      "@app": ["./src/app/index.ts"],
+      "@app/styles.css": ["./src/app/styles/index.css"],
+      "@router": ["./src/router/index.ts"],
       "@shared": ["./src/shared/index.ts"],
     }
   },
