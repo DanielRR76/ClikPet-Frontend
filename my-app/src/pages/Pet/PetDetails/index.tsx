@@ -2,10 +2,7 @@ import styles from "../styles.module.css";
 import petDetailsStyles from "./styles.module.css";
 import petTest from "../../../assets/petTest.jpg";
 import petTest2 from "../../../assets/petTest2.jpg";
-import { Typography } from "../../../components/Typography";
-import { Button } from "../../../components/Button";
-import { Image } from "../../../components/Image";
-import Carousel from "../../../components/Carousel";
+import { Typography, Button, Image, Carousel } from "@shared";
 import { PageSection } from "../../../layouts/PageSection";
 export function PetDetails() {
   return (

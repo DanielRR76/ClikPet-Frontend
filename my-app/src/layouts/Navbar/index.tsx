@@ -1,4 +1,4 @@
-import { Logo } from "../../components";
+import { Logo } from "./Logo";
 import { MenuOptions } from "../index";
 import styles from "./styles.module.css";
 export function Navbar() {

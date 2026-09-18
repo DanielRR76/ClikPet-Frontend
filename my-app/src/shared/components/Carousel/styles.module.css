@@ -1,0 +1,41 @@
+.carousel {
+  display: flex;
+  height: var(--full);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: var(--small);
+}
+.carousel::-webkit-scrollbar {
+  height: var(--small);
+}
+.carousel::-webkit-scrollbar-track {
+  background: var(--gray);
+  border-radius: var(--x-small);
+}
+.carousel::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: var(--xx-small);
+}
+.carousel > * + * {
+  margin-left: var(--small);
+}
+
+/* Keep each slide at its declared width so the measurement is reliable. */
+.carousel > * {
+  flex: 0 0 auto;
+}
+
+:root[data-theme="dark"] {
+  .carousel::-webkit-scrollbar-track {
+    background: var(--gray-light);
+  }
+}
+
+@media (max-width: 689px) {
+  .carousel {
+    width: 100% !important;
+    & > * {
+      width: 95% !important;
+    }
+  }
+}

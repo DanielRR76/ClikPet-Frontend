@@ -1,6 +1,6 @@
-import { Button, Icon, Typography } from "../../components";
-import RouterLink from "../../components/RouterLink";
-import { PATH } from "../../router/routes";
+import { Button, Icon, Typography } from "@shared";
+import { RouterLink } from "@shared";
+import { PATH } from "@router";
 import styles from "./styles.module.css";
 import { useEffect, useState } from "react";
 

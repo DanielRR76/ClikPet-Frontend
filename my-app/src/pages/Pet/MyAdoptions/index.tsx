@@ -3,7 +3,7 @@ import myAdoptionsStyles from "./styles.module.css";
 import petTest from "../../../assets/petTest.jpg";
 import petTest3 from "../../../assets/petTest3.jpg";
 import { PageSection } from "../../../layouts/PageSection";
-import { Typography, Image, Badge } from "../../../components";
+import { Typography, Image, Badge } from "@shared";
 export function MyAdoptions() {
   return (
     <PageSection title="Minhas Adoções">

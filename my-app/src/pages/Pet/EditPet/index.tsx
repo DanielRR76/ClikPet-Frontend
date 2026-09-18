@@ -1,9 +1,4 @@
-import { Button } from "../../../components/Button";
-import { FileUpload } from "../../../components/FileUpload";
-import { Form } from "../../../components/forms";
-import { Input } from "../../../components/Input";
-import { Select } from "../../../components/Select";
-import { Typography } from "../../../components/Typography";
+import { Button, FileUpload, Form, Input, Select, Typography } from "@shared";
 import { PageSection } from "../../../layouts/PageSection";
 export function EditPet() {
   return (

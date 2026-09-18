@@ -1,4 +1,4 @@
-import { PetGrid } from "../../components";
+import { PetGrid } from "@shared";
 import { PageSection } from "../../layouts";
 export function Home() {
   return (
