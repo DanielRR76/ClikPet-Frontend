@@ -7,6 +7,7 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
+      "@api": fileURLToPath(new URL("./src/api/index.ts", import.meta.url)),
       "@shared": fileURLToPath(
         new URL("./src/shared/index.ts", import.meta.url),
       ),

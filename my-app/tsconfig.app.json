@@ -25,6 +25,7 @@
     "noUncheckedSideEffectImports": true,
 
     "paths": {
+      "@api": ["./src/api/index.ts"],
       "@shared": ["./src/shared/index.ts"],
     }
   },
