@@ -8,6 +8,13 @@ export default defineConfig({
   resolve: {
     alias: {
       "@api": fileURLToPath(new URL("./src/api/index.ts", import.meta.url)),
+      "@app/styles.css": fileURLToPath(
+        new URL("./src/app/styles/index.css", import.meta.url),
+      ),
+      "@app": fileURLToPath(new URL("./src/app/index.ts", import.meta.url)),
+      "@router": fileURLToPath(
+        new URL("./src/router/index.ts", import.meta.url),
+      ),
       "@shared": fileURLToPath(
         new URL("./src/shared/index.ts", import.meta.url),
       ),
