@@ -1,6 +1,6 @@
 import { Fragment, type ReactNode } from "react";
 import styles from "./styles.module.css";
-import { Typography } from "../../components";
+import { Typography } from "@shared";
 
 interface PageSectionProps {
   title: string;

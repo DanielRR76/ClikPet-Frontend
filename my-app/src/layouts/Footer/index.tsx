@@ -1,4 +1,4 @@
-import { Icon, Typography } from "../../components";
+import { Icon, Typography } from "@shared";
 import styles from "./styles.module.css";
 export function Footer() {
   return (

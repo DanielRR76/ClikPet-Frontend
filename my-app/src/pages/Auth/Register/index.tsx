@@ -1,10 +1,6 @@
-import { Button } from "../../../components/Button";
-import { Form } from "../../../components/forms";
-import { Input } from "../../../components/Input";
-import RouterLink from "../../../components/RouterLink";
-import { Typography } from "../../../components/Typography";
+import { Button, Form, Input, RouterLink, Typography } from "@shared";
 import { PageSection } from "../../../layouts/PageSection";
-import { PATH } from "../../../router/routes";
+import { PATH } from "@router";
 import registerStyles from "./styles.module.css";
 export function Register() {
   return (

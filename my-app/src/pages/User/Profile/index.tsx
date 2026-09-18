@@ -1,8 +1,4 @@
-import { Button } from "../../../components/Button";
-import { FileUpload } from "../../../components/FileUpload";
-import { Form } from "../../../components/forms";
-import { Input } from "../../../components/Input";
-import { Typography } from "../../../components/Typography";
+import { Button, FileUpload, Form, Input, Typography } from "@shared";
 import { PageSection } from "../../../layouts/PageSection";
 export function Profile() {
   return (

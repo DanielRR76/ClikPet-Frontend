@@ -1,0 +1,49 @@
+.input_container {
+  width: var(--full);
+}
+
+.input_container label {
+  margin-bottom: var(--small);
+}
+
+input {
+  box-sizing: border-box;
+  padding: var(--small);
+  border: var(--xx-small) solid var(--dark);
+  background-color: var(--transparent);
+  border-radius: var(--x-small);
+  color: inherit;
+
+  &::placeholder {
+    color: inherit;
+  }
+
+  &:focus {
+    border-color: var(--primary);
+    outline: none;
+    /* box-shadow: 0 0 0 2px color-mix(in srgb, var(--primary) 30%, transparent); */
+  }
+}
+
+.invalid {
+  border-color: var(--danger);
+}
+
+:root[data-theme="dark"] {
+  input {
+    border-color: var(--transparent);
+    background-color: var(--gray-light);
+    color: var(--primary);
+    &:focus::placeholder {
+      color: var(--primary);
+    }
+
+    &:focus {
+      border-color: var(--primary);
+      outline: none;
+    }
+  }
+  .invalid {
+    border-color: var(--danger);
+  }
+}

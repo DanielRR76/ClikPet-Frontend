@@ -1,0 +1,130 @@
+.button {
+  justify-content: center;
+  padding: var(--x-small);
+}
+
+.iconOnly {
+  flex-direction: row;
+}
+
+.left {
+  flex-direction: row-reverse;
+
+  div {
+    margin-right: var(--xx-small);
+  }
+}
+
+.right {
+  flex-direction: row;
+
+  div {
+    margin-left: var(--xx-small);
+  }
+}
+
+.primary,
+.gray,
+.danger,
+.success,
+.transparent,
+.translucent,
+.disabled {
+  border-color: var(--transparent);
+}
+
+.danger,
+.success,
+.translucent,
+.transparent {
+  background-color: var(--transparent);
+}
+
+.primary {
+  background-color: var(--primary);
+}
+
+.gray {
+  background-color: var(--gray);
+}
+
+.danger {
+  color: var(--danger);
+
+  &:hover {
+    background-color: var(--danger-light);
+    color: var(--bg);
+  }
+}
+
+.success {
+  color: var(--success-dark);
+
+  &:hover {
+    background-color: var(--success);
+    color: var(--bg);
+  }
+}
+
+.disabled {
+  background-color: var(--disabled-light);
+  color: var(--dark);
+
+  cursor: not-allowed;
+}
+
+.transparent:hover {
+  background-color: var(--primary);
+}
+
+.translucent:hover {
+  border: var(--xx-small) solid var(--dark);
+  cursor: pointer;
+}
+
+:root[data-theme="dark"] {
+  .primary,
+  .gray {
+    background-color: var(--bg);
+  }
+
+  .primary,
+  .disabled {
+    border-color: var(--primary);
+    color: var(--primary);
+  }
+
+  .gray {
+    border-color: #d3d3d3;
+    color: #d3d3d3;
+  }
+
+  .transparent {
+    color: inherit;
+    &:hover {
+      color: var(--bg);
+    }
+  }
+
+  .disabled {
+    background-color: var(--disabled);
+  }
+
+  .translucent {
+    color: var(--dark);
+  }
+}
+
+.danger:hover,
+.success:hover,
+.transparent:hover,
+.gray:hover,
+.primary:hover {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.primary:hover,
+.gray:hover {
+  filter: brightness(0.9);
+}

@@ -1,10 +1,8 @@
-import { Typography } from "../../../components/Typography";
+import { Typography, Image, Button } from "@shared";
 import styles from "../styles.module.css";
 import myPetsStyles from "./styles.module.css";
-import { Button } from "../../../components/Button";
 import petTest from "../../../assets/petTest.jpg";
 import petTest1 from "../../../assets/petTest2.jpg";
-import { Image } from "../../../components/Image";
 import { PageSection } from "../../../layouts/PageSection";
 export function MyPets() {
   return (
