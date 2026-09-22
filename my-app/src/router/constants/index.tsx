@@ -1,14 +1,15 @@
-import { LoginPage, RegisterPage } from "@features";
-
 import {
-  Home,
-  MyAdoptions,
-  MyPets,
-  PetDetails,
-  AddPet,
-  EditPet,
-  Profile,
-} from "../../pages";
+  LoginPage,
+  RegisterPage,
+  PetsPage,
+  MyAdoptionsPage,
+  MyPetsPage,
+  PetDetailsPage,
+  AddPetPage,
+  EditPetPage,
+} from "@features";
+
+import { Profile } from "../../pages";
 
 export const PATH = {
   HOME: "/",
@@ -25,47 +26,47 @@ export const PATH = {
 export const ROUTES = {
   HOME: {
     path: PATH.HOME,
-    element: <Home />,
+    element: <PetsPage />,
     needsAuth: false,
   },
   LOGIN: {
     path: PATH.LOGIN,
-    element: <Login />,
+    element: <LoginPage />,
     needsAuth: false,
   },
   REGISTER: {
     path: PATH.REGISTER,
-    element: <Register />,
+    element: <RegisterPage />,
     needsAuth: false,
   },
   PROFILE: {
     path: PATH.PROFILE,
-    element: <Profile />,
+    element: <ProfilePage />,
     needsAuth: true,
   },
   MY_PETS: {
     path: PATH.MY_PETS,
-    element: <MyPets />,
+    element: <MyPetsPage />,
     needsAuth: true,
   },
   MY_ADOPTIONS: {
     path: PATH.MY_ADOPTIONS,
-    element: <MyAdoptions />,
+    element: <MyAdoptionsPage />,
     needsAuth: true,
   },
   ADD_PET: {
     path: PATH.ADD_PET,
-    element: <AddPet />,
+    element: <AddPetPage />,
     needsAuth: true,
   },
   PET_DETAILS: {
     path: PATH.PET_DETAILS(),
-    element: <PetDetails />,
+    element: <PetDetailsPage />,
     needsAuth: false,
   },
   EDIT_PET: {
     path: PATH.EDIT_PET(),
-    element: <EditPet />,
+    element: <EditPetPage />,
     needsAuth: true,
   },
 } as const;
