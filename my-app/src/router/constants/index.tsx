@@ -1,15 +1,14 @@
 import {
-  LoginPage,
-  RegisterPage,
   PetsPage,
   MyAdoptionsPage,
   MyPetsPage,
   PetDetailsPage,
   AddPetPage,
   EditPetPage,
+  ProfilePage,
+  LoginPage,
+  RegisterPage,
 } from "@features";
-
-import { Profile } from "../../pages";
 
 export const PATH = {
   HOME: "/",
