@@ -10,6 +10,5 @@ export * from "./RouterLink";
 export * from "./Select";
 export * from "./Typography";
 export * from "./Popover";
-export * from "./PetGrid";
 export * from "./Toast";
 export * from "./RequestState";
