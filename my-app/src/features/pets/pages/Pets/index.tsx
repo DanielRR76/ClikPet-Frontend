@@ -1,6 +1,7 @@
-import { PetGrid } from "@shared";
-import { PageSection } from "../../layouts";
-export function Home() {
+import { PageSection } from "@layouts";
+import { PetGrid } from "../../components";
+
+export function PetsPage() {
   return (
     <PageSection
       title="Adote um Pet"
