@@ -1,0 +1,16 @@
+.phoneMenu {
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .phoneMenu {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .phoneMenu {
+    display: flex;
+    position: relative;
+  }
+}

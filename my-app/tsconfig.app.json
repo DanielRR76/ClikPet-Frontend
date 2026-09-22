@@ -28,6 +28,7 @@
       "@api": ["./src/api/index.ts"],
       "@app": ["./src/app/index.ts"],
       "@app/styles.css": ["./src/app/styles/index.css"],
+      "@layouts": ["./src/layouts/index.ts"],
       "@router": ["./src/router/index.ts"],
       "@shared": ["./src/shared/index.ts"],
       "@stores": ["./src/stores/index.ts"]

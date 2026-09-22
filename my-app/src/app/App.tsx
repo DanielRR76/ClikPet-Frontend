@@ -1,5 +1,6 @@
-import { LayoutWrapper, Navbar, Container, Footer } from "../layouts";
-import { Router, Routes } from "../router";
+import { LayoutWrapper, Navbar, Container, Footer } from "@layouts";
+import { Router, Routes } from "@router";
+import { AuthProvider } from "@stores";
 import ReactQueryProvider from "./providers/ReactQuery/context";
 import { Toast } from "@shared";
 

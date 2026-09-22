@@ -1,0 +1,19 @@
+.fullMenu {
+  align-items: center;
+}
+
+.fullMenu > * + * {
+  margin-left: var(--small);
+}
+
+@media (min-width: 768px) {
+  .fullMenu {
+    display: flex;
+  }
+}
+
+@media (max-width: 767px) {
+  .fullMenu {
+    display: none;
+  }
+}
