@@ -1,0 +1,15 @@
+.phoneMenuOptions {
+  display: flex;
+  align-items: center;
+  padding: var(--x-small);
+  border-radius: var(--x-small);
+
+  & > * + * {
+    margin-left: var(--small);
+  }
+  &:hover {
+    background-color: var(--dark);
+    color: var(--primary);
+    cursor: pointer;
+  }
+}

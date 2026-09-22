@@ -12,6 +12,9 @@ export default defineConfig({
         new URL("./src/app/styles/index.css", import.meta.url),
       ),
       "@app": fileURLToPath(new URL("./src/app/index.ts", import.meta.url)),
+      "@layouts": fileURLToPath(
+        new URL("./src/layouts/index.ts", import.meta.url),
+      ),
       "@router": fileURLToPath(
         new URL("./src/router/index.ts", import.meta.url),
       ),
