@@ -7,14 +7,16 @@ export function App() {
   return (
     <Router>
       <ReactQueryProvider>
-        <LayoutWrapper>
-          <Navbar />
-          <Container>
-            <Toast />
-            <Routes />
-          </Container>
-          <Footer />
-        </LayoutWrapper>
+        <AuthProvider>
+          <LayoutWrapper>
+            <Navbar />
+            <Container>
+              <Toast />
+              <Routes />
+            </Container>
+            <Footer />
+          </LayoutWrapper>
+        </AuthProvider>
       </ReactQueryProvider>
     </Router>
   );

@@ -30,6 +30,7 @@
       "@app/styles.css": ["./src/app/styles/index.css"],
       "@router": ["./src/router/index.ts"],
       "@shared": ["./src/shared/index.ts"],
+      "@stores": ["./src/stores/index.ts"]
     }
   },
   "include": ["src"]
