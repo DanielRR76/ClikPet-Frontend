@@ -1,0 +1,3 @@
+.pet_details_actions > * + * {
+  margin-top: var(--small);
+}

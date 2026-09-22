@@ -1,0 +1,82 @@
+.pet_image_container,
+.pet_characteristics {
+  display: flex;
+}
+
+.pet_details_container > * + *,
+.pet_text > * + * {
+  margin-top: var(--small);
+}
+
+.pet_characteristics,
+.pet_about,
+.pet_details_container {
+  padding: var(--base);
+}
+
+.pet_about,
+.pet_characteristics {
+  justify-content: space-between;
+}
+
+.pet_characteristics,
+.pet_details_container {
+  width: var(--full);
+}
+
+.pet_image_container,
+.pet_details_container {
+  border-radius: var(--x-small);
+}
+.pet_image_container {
+  width: 100%;
+  justify-content: center;
+
+  border: var(--x-small) solid var(--transparent);
+  margin-bottom: var(--base);
+}
+.pet_details_container {
+  border: var(--x-small) solid var(--gray);
+  background-color: var(--gray-light);
+}
+
+.pet_about,
+.pet_characteristics:not(:last-child) {
+  border-bottom: var(--x-small) solid var(--gray);
+}
+.pet_about .pet_text {
+  width: 75%;
+  margin-right: var(--small);
+}
+
+.pet_characteristics .pet_text {
+  max-width: 20rem;
+  & + * {
+    margin-left: var(--small);
+  }
+}
+
+.pet_details_align_center {
+  align-items: center;
+}
+
+:root[data-theme="dark"] {
+  .pet_details_container {
+    border-color: var(--gray-light);
+    background-color: var(--gray);
+  }
+  .pet_about,
+  .pet_characteristics:not(:last-child) {
+    border-color: var(--gray-light);
+  }
+}
+
+@media (max-width: 489px) {
+  .pet_characteristics:not(:last-child) {
+    flex-direction: column;
+    & .pet_text + * {
+      margin-left: 0;
+      margin-top: var(--small);
+    }
+  }
+}
