@@ -1,3 +1,5 @@
+import { LoginPage, RegisterPage } from "@features";
+
 import {
   Home,
   MyAdoptions,
@@ -6,8 +8,6 @@ import {
   AddPet,
   EditPet,
   Profile,
-  Login,
-  Register,
 } from "../../pages";
 
 export const PATH = {

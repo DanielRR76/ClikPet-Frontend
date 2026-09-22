@@ -1,0 +1,12 @@
+export type RegisterForm = {
+  name: string;
+  email: string;
+  phone: string;
+  password: string;
+  confirmPassword: string;
+};
+
+export type LoginForm = {
+  email: string;
+  password: string;
+};

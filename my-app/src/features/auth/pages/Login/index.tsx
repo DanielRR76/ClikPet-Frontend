@@ -1,18 +1,24 @@
-import { Button, Form, Input, RouterLink, Typography } from "@shared";
-import { PageSection } from "../../../layouts/PageSection";
+import { PageSection } from "@layouts";
+import { Button, Form, Input, Typography, RouterLink } from "@shared";
 import { PATH } from "@router";
 import loginStyles from "./styles.module.css";
-export function Login() {
+import { useLogin } from "../../hooks/useLogin";
+export function LoginPage() {
+  const { email, password, errors, handleChange, handleSubmit } = useLogin();
   return (
     <PageSection title="Login">
       <div className="form_background">
-        <Form onSubmit={() => console.log("teste")}>
+        <Form onSubmit={handleSubmit}>
           <Input
             width="100%"
             label="Email"
             type="email"
             name="email"
+            autoComplete="email"
             placeholder="Digite seu email"
+            isInvalid={errors.email}
+            value={email}
+            onChange={handleChange}
           />
 
           <Input
@@ -21,6 +27,10 @@ export function Login() {
             type="password"
             name="password"
             placeholder="Digite sua senha"
+            autoComplete="current-password"
+            isInvalid={errors.password}
+            value={password}
+            onChange={handleChange}
           />
 
           <Button
