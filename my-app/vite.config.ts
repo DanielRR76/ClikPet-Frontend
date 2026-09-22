@@ -18,6 +18,9 @@ export default defineConfig({
       "@shared": fileURLToPath(
         new URL("./src/shared/index.ts", import.meta.url),
       ),
+      "@stores": fileURLToPath(
+        new URL("./src/stores/index.ts", import.meta.url),
+      ),
     },
   },
 });
