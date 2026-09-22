@@ -1,0 +1,41 @@
+.container {
+  width: var(--full);
+  padding: var(--base);
+  margin-top: var(--small);
+  border: var(--x-small) solid var(--gray);
+  background-color: var(--gray-light);
+  border-radius: var(--x-small);
+}
+.row {
+  width: var(--full);
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--bg);
+  border: var(--x-small) solid var(--gray);
+  border-radius: var(--x-small);
+  padding: var(--small);
+}
+
+:root[data-theme="dark"] {
+  .container {
+    border-color: var(--gray-light);
+    background-color: var(--gray);
+  }
+  .row {
+    border-color: var(--gray-light);
+  }
+}
+
+.container .row + .row {
+  margin-top: var(--base);
+}
+
+.pet_info > * + * {
+  margin-left: var(--small);
+}
+
+@media (max-width: 450px) {
+  .pet_info p {
+    width: 8rem;
+  }
+}
