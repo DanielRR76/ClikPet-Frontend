@@ -5,13 +5,13 @@ import { PATH } from "../../constants";
 import { Outlet } from "react-router";
 
 export function AuthGuard() {
-  const { user } = useAuthContext();
+  const { user, isLoading } = useAuthContext();
   const navigate = useNavigateWrapper();
 
   useEffect(() => {
-    if (!user) {
+    if (!user && !isLoading) {
       navigate(PATH.LOGIN);
     }
-  }, [user]);
+  }, [user, isLoading]);
   return <Outlet />;
 }
