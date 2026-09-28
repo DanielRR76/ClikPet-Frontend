@@ -1,11 +1,9 @@
 import { api, type HttpResponse } from "@api";
-import type { AuthUser } from "../types";
+import type { User } from "../types";
 import { AUTH_ENDPOINTS } from "../constants";
 
 export async function checkUser() {
-  const response = await api.get<HttpResponse<AuthUser>>(
-    AUTH_ENDPOINTS.CHECK_USER,
-  );
+  const response = await api.get<HttpResponse<User>>(AUTH_ENDPOINTS.CHECK_USER);
   return response.data;
 }
 

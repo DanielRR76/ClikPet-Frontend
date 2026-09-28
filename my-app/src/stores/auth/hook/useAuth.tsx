@@ -1,5 +1,5 @@
 import { checkUser, logout } from "../services";
-import type { AuthUser, AuthState } from "../types";
+import type { User, AuthState } from "../types";
 import {
   useMutationWrapper,
   useQueryClientWrapper,
@@ -10,7 +10,7 @@ import { AUTH_QUERY_KEYS } from "../constants";
 
 export function useAuth() {
   const queryClient = useQueryClientWrapper();
-  const { data, isLoading } = useQueryWrapper<HttpResponse<AuthUser>>({
+  const { data, isLoading } = useQueryWrapper<HttpResponse<User>>({
     queryKey: AUTH_QUERY_KEYS.CHECK_USER,
     queryFn: () => checkUser(),
     retry: false,
@@ -26,7 +26,7 @@ export function useAuth() {
     logoutMutate();
   };
 
-  const setUser = (user?: AuthUser) => {
+  const setUser = (user?: User) => {
     if (user) {
       queryClient.setQueryData([AUTH_QUERY_KEYS.CHECK_USER], {
         payload: user,
