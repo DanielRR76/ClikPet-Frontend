@@ -2,14 +2,17 @@ import { Typography } from "@shared";
 import type { Pet } from "../../types";
 import styles from "./styles.module.css";
 import { formatAge, formatWeight, standardizeText } from "../../utils";
+import { useAuthContext } from "@stores";
 
 export function PetDetailsAbout({
   pet,
-  petDetailsActions,
+  children,
 }: {
   pet?: Pet;
-  petDetailsActions?: React.ReactNode;
+  children?: React.ReactNode;
 }) {
+  const { user } = useAuthContext();
+  const owner = pet?.owner.id === user?.id ? "Você" : pet?.owner.name;
   return (
     <div className={`${styles.pet_details_container} flex_column`}>
       <div className={`flex_align_center ${styles.pet_about}`}>
@@ -17,12 +20,12 @@ export function PetDetailsAbout({
           <Typography text={`Sobre ${pet?.name}`} variant="h2" size="large" />
           <Typography text="Descrição do pet não informada." size="base" />
         </div>
-        {petDetailsActions}
+        {children}
       </div>
       <div className={styles.pet_characteristics}>
         <div className={styles.pet_text}>
           <Typography text="Dono" variant="h2" />
-          <Typography text={standardizeText("")} size="base" />
+          <Typography text={standardizeText(owner)} size="base" />
         </div>
         <div className={styles.pet_text}>
           <Typography text="Localidade" variant="h2" />

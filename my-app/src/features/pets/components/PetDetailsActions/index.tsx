@@ -4,13 +4,8 @@ import styles from "./styles.module.css";
 import { PATH, useNavigateWrapper, useParamsWrapper } from "@router";
 import { useScheduleAdoption } from "../../hooks/useScheduleAdoption";
 import { useDeletePet } from "../../hooks/useDeletePet";
-export function PetDetailsActions({
-  ownerId,
-  adopterId,
-}: {
-  ownerId?: number;
-  adopterId?: number;
-}) {
+import type { Pet } from "../../types";
+export function PetDetailsActions({ pet }: { pet?: Pet }) {
   const { user } = useAuthContext();
   const { id } = useParamsWrapper();
   const petId = Number(id);
@@ -20,7 +15,9 @@ export function PetDetailsActions({
   const goTo = (path: string) => {
     navigate(path);
   };
-  const selectActions = (petOwnerId?: number) => {
+  const selectActions = () => {
+    const petOwnerId = pet?.owner.id;
+    const adopterId = pet?.adopterId;
     if (!petOwnerId) return;
     if (user && user.id === petOwnerId) {
       return (
@@ -74,7 +71,7 @@ export function PetDetailsActions({
   };
   return (
     <div className={`${styles.pet_details_actions} flex_column`}>
-      {selectActions(ownerId)}
+      {selectActions()}
     </div>
   );
 }

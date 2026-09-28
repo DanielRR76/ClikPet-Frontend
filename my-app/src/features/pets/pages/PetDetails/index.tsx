@@ -39,15 +39,9 @@ export function PetDetailsPage() {
               ))}
             </Carousel>
           </div>
-          <PetDetailsAbout
-            pet={pet}
-            petDetailsActions={
-              <PetDetailsActions
-                ownerId={pet?.ownerId}
-                adopterId={pet?.adopterId}
-              />
-            }
-          />
+          <PetDetailsAbout pet={pet}>
+            <PetDetailsActions pet={pet} />
+          </PetDetailsAbout>
         </div>
       </PageSection>
     </RequestState>

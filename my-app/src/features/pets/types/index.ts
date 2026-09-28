@@ -1,3 +1,5 @@
+import type { User } from "@stores";
+
 export type Pet = {
   id: number;
   name: string;
@@ -7,7 +9,7 @@ export type Pet = {
   images: string[];
   available: boolean;
   adopterId?: number;
-  ownerId: number;
+  owner: User;
 };
 
 export type AddPetForm = {
