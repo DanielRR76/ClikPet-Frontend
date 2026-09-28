@@ -1,4 +1,4 @@
-export type AuthUser = {
+export type User = {
   id: number;
   name: string;
   email: string;
@@ -8,8 +8,8 @@ export type AuthUser = {
 
 export type AuthState = {
   isAuthenticated: boolean;
-  user?: AuthUser;
+  user?: User;
   isLoading: boolean;
-  setUser: (user?: AuthUser) => void;
+  setUser: (user?: User) => void;
   clearAuthState: () => void;
 };

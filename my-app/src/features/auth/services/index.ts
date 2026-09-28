@@ -1,18 +1,18 @@
 import { api, type HttpResponse } from "@api";
 import { AUTH_ENDPOINTS } from "../constants";
 import type { LoginForm, RegisterForm } from "../types";
-import type { AuthUser } from "@stores";
+import type { User } from "@stores";
 import { requestHandler } from "@shared";
 class AuthService {
   async login(data: LoginForm) {
     return requestHandler(() =>
-      api.post<HttpResponse<AuthUser>>(AUTH_ENDPOINTS.LOGIN, data),
+      api.post<HttpResponse<User>>(AUTH_ENDPOINTS.LOGIN, data),
     );
   }
 
   async register(data: RegisterForm) {
     return requestHandler(() =>
-      api.post<HttpResponse<AuthUser>>(AUTH_ENDPOINTS.REGISTER, data),
+      api.post<HttpResponse<User>>(AUTH_ENDPOINTS.REGISTER, data),
     );
   }
 
