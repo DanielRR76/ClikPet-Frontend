@@ -20,7 +20,7 @@ export function MyAdoptionsPage() {
           <div className={myAdoptionsStyles.container}>
             <div className={myAdoptionsStyles.table}>
               {myAdoptions?.payload?.map((pet) => (
-                <span>
+                <span key={pet.id}>
                   <div>
                     <div className={`flex_align_center ${styles.pet_info}`}>
                       <Image
@@ -44,12 +44,12 @@ export function MyAdoptionsPage() {
                     >
                       <Typography
                         color="inherit"
-                        text="Ligue para: 21 99999-9999"
+                        text={`Ligue para: ${pet.owner?.phone}`}
                         size="base"
                       />
                       <Typography
                         color="inherit"
-                        text="Ou mande mensagem para: João"
+                        text={`Ou mande mensagem para: ${pet.owner?.name}`}
                         size="base"
                       />
                     </div>
