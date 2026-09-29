@@ -41,7 +41,7 @@
       "hidden": true
     }
   ],
-  "commitUrlFormat": "https://github.com/DanielRR76/ClikPet-Frontend/commit/{{hash}}",
-  "compareUrlFormat": "https://github.com/DanielRR76/ClikPet-Frontend/compare/{{previousTag}}...{{currentTag}}",
-  "issueUrlFormat": "https://github.com/DanielRR76/ClikPet-Frontend/issues/{{id}}"
+  "commitUrlFormat": "https://github.com/DanielRR76/ClikPets-Frontend/commit/{{hash}}",
+  "compareUrlFormat": "https://github.com/DanielRR76/ClikPets-Frontend/compare/{{previousTag}}...{{currentTag}}",
+  "issueUrlFormat": "https://github.com/DanielRR76/ClikPets-Frontend/issues/{{id}}"
 }
