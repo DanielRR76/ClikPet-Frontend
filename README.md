@@ -1,5 +1,7 @@
 # ClikPets — Frontend
 
+[English version](README.en.md)
+
 Frontend da plataforma ClikPets, onde pessoas podem encontrar pets para adoção e usuários autenticados podem cadastrar e administrar pets. A aplicação é uma SPA construída com React, TypeScript e Vite e consome a API do projeto, executada separadamente.
 
 ## Funcionalidades
