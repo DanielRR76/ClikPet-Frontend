@@ -57,6 +57,7 @@ export function MyPetsPage() {
                           <Typography
                             color="inherit"
                             text="Concluir adoção"
+                            align="center"
                             size="base"
                           />
                         }

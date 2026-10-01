@@ -11,6 +11,10 @@
 @media (max-width: 500px) {
   .my_pets_actions {
     flex-direction: column;
+    justify-content: center;
+    & > button {
+      width: min-content !important;
+    }
   }
   .my_pets_actions > * + * {
     margin-left: 0;
