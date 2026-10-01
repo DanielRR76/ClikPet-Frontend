@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.4](https://github.com/DanielRR76/ClikPets-Frontend/compare/v1.0.3...v1.0.4) (2026-10-01)
+
+
+### Bug Fixes
+
+* center align adoption completion text and adjust button width in mobile view ([1094422](https://github.com/DanielRR76/ClikPets-Frontend/commit/1094422726cc22234224e231364ed94e47db718d))
+
 ### [1.0.3](https://github.com/DanielRR76/ClikPets-Frontend/compare/v1.0.2...v1.0.3) (2026-09-30)
 
 ### [1.0.2](https://github.com/DanielRR76/ClikPets-Frontend/compare/v1.0.1...v1.0.2) (2026-09-29)
